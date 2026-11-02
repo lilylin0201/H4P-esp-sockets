@@ -14,11 +14,11 @@
 #include <Adafruit_Sensor.h>
 
 // ---- settings -------------------------------------------------------------
-const char* WIFI_SSID = "YOUR_WIFI_NAME";
-const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
+const char* WIFI_SSID = "gd-network-2g";
+const char* WIFI_PASS = "HeheheHahaha";
 
 // local relay on the classroom WiFi:
-const char* SERVER_HOST = "h4p-esp-sockets.onrender.com";//your render link without https
+const char* SERVER_HOST = "h4p-esp-sockets-gwuq.onrender.com/";//your render link without https
 const int   SERVER_PORT = 443;
 const bool  USE_SSL     = true;
 // public relay on Render (hostname only, no https://):
@@ -60,16 +60,16 @@ void setup() {
 
   // --- sensor ---
   Wire.begin();                           // D4 = SDA, D5 = SCL
-  if (!mpu.begin()) {
-    Serial.println("MPU6050 not found");
-    while (true) {                        // fast blink = sensor missing
-      digitalWrite(LED, !digitalRead(LED));
-      delay(100);
-    }
-  }
-  mpu.setAccelerometerRange(MPU6050_RANGE_4_G);
-  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
-  mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+  // if (!mpu.begin()) {
+  //   Serial.println("MPU6050 not found");
+  //   while (true) {                        // fast blink = sensor missing
+  //     digitalWrite(LED, !digitalRead(LED));
+  //     delay(100);
+  //   }
+  // }
+  // mpu.setAccelerometerRange(MPU6050_RANGE_4_G);
+  // mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+  // mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
 
   // --- wifi ---
   WiFi.mode(WIFI_STA);
