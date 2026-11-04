@@ -14,11 +14,11 @@
 #include <Adafruit_Sensor.h>
 
 // ---- settings -------------------------------------------------------------
-const char* WIFI_SSID = "gd-network-2g";
-const char* WIFI_PASS = "HeheheHahaha";
+const char* WIFI_SSID = "La Maison";
+const char* WIFI_PASS = "Tily06510";
 
 // local relay on the classroom WiFi:
-const char* SERVER_HOST = "h4p-esp-sockets-gwuq.onrender.com/";//your render link without https
+const char* SERVER_HOST = "h4p-esp-sockets-gwuq.onrender.com";//your render link without https
 const int   SERVER_PORT = 443;
 const bool  USE_SSL     = true;
 // public relay on Render (hostname only, no https://):
