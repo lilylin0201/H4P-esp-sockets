@@ -1,7 +1,7 @@
 // XIAO ESP32-C6 + LDR + LED, talking to the relay over WebSockets.
 //
 // Wiring:  3V3 -> LDR -> D0 (A0) -> 10k resistor -> GND     (more light = higher value)
-//          D7 -> LED -> resistor -> GND
+//          D 7 -> LED -> resistor -> GND
 // Note: only D0, D1 and D2 can read analog voltages on the XIAO C6.
 //
 // Sends every 500 ms:   "<boardId>,<ldr>"       e.g.  "7A3F,2310"   (ldr is 0..4095)
@@ -14,8 +14,8 @@
 #include <WebSocketsClient.h>
 
 // ---- settings -------------------------------------------------------------
-const char* WIFI_SSID = "YOUR_WIFI_NAME";
-const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
+const char* WIFI_SSID = "gd-network-2g";
+const char* WIFI_PASS = "HeheheHahaha";
 
 // Local relay on the classroom WiFi:
 // const char* SERVER_HOST = "192.168.4.186";

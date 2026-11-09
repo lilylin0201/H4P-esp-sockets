@@ -59,7 +59,7 @@ void setup() {
   pinMode(LED, OUTPUT);
 
   // --- sensor ---
-  Wire.begin();                           // D4 = SDA, D5 = SCL
+  //Wire.begin();                           // D4 = SDA, D5 = SCL
   // if (!mpu.begin()) {
   //   Serial.println("MPU6050 not found");
   //   while (true) {                        // fast blink = sensor missing
